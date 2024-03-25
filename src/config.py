@@ -75,7 +75,7 @@ def get_args():
     parser.add_argument('--num_epochs', type=int, default=20,
                         help='number of epochs (default: 20)')
     parser.add_argument('--when', type=int, default=11,
-                        help='when to decay learning rate (default: 20)')
+                        help='when to decay learning rate (default: 11)')
     parser.add_argument('--patience', type=int, default=10,
                         help='when to stop training if best never change')
     parser.add_argument('--update_batch', type=int, default=1,
