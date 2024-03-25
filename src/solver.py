@@ -75,7 +75,7 @@ class Solver(object):
             optimizer_main_group
         )
 
-        self.scheduler_main = StepLR(self.optimizer_main, step_size=11,gamma=0.1) # step_size=5 in MOSEI
+        self.scheduler_main = StepLR(self.optimizer_main, step_size=hp.shen,gamma=0.1) # step_size=5 in MOSEI
 
 
     ####################################################################
@@ -100,7 +100,7 @@ class Solver(object):
             start_time = time.time()
             left_batch = self.update_batch
 
-            for i_batch, batch_data in enumerate(self.train_loader):  # 取数据
+            for i_batch, batch_data in enumerate(self.train_loader):
                 text, visual, vlens, audio, alens, y, l, bert_sent, bert_sent_type, bert_sent_mask, ids = batch_data
                 
                 model.zero_grad()
