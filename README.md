@@ -6,7 +6,7 @@ This repository contains the official implementation code of the paper [Hierarch
 
 HSCL introduce supervised contrastive learning and propose a hierarchical training strategy for Multimodal Sentiment Analysis. 
 
-<img src="img\model4.png" style="zoom:70%;" />
+<img src="model4.png" style="zoom:70%;" />
 
 ## Usage
 
