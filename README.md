@@ -19,7 +19,7 @@ conda create -n HSCL python=3.7
 conda activate HSCL
 pip install -r requirements.txt
 ```
-
+If you encounter the following error: `ERROR: No matching distribution found for torch==1.8.0+cu111`, please run `pip install torch==1.8.0+cu111 -f  https://download.pytorch.org/whl/cu111/torch_stable.html`.
 3. Start training.
 
 Training on CMU-MOSI:
