@@ -75,7 +75,7 @@ class Solver(object):
             optimizer_main_group
         )
 
-        self.scheduler_main = StepLR(self.optimizer_main, step_size=hp.shen,gamma=0.1) # step_size=5 in MOSEI
+        self.scheduler_main = StepLR(self.optimizer_main, step_size=hp.when,gamma=0.1) # step_size=5 in MOSEI
 
 
     ####################################################################
