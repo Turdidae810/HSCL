@@ -32,7 +32,7 @@ python main.py --dataset mosi --data_path [your MOSI path] --bert_path [your ber
 Training on CMU-MOSEI:
 
 ```
-python main.py --dataset mosei --data_path [your MOSEI path] --bert_path [your bert path] --when 5 --omega2 0.05 --lr_main 2e-4 --lr_bert 1e-5
+python main.py --dataset mosei --data_path [your MOSEI path] --bert_path [your bert path] --when 5 --omega2 0.05 --lr_main 1e-4 --lr_bert 1e-5
 ```
 
 ## Citation
