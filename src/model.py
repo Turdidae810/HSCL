@@ -29,8 +29,8 @@ class HSCL(nn.Module):  # Hierarchical Supervised Contrastive Learning
             self.acoustic_enc = TransformerEncoder(ninp=74, nhead=2, nhid=32, nlayers=3, dropout=0.1)
 
         #  2. bimodal fusion
-        self.tv_encoder = BimodalFusionLayer(embed_dim=768, cross_heads=12, self_heads=12,kdim=20, vdim=20)
-        self.ta_encoder = BimodalFusionLayer(embed_dim=768, cross_heads=12, self_heads=12,kdim=5, vdim=5)
+        self.tv_encoder = BimodalFusionLayer(embed_dim=768, cross_heads=12, self_heads=12,kdim=self.v_dim, vdim=self.v_dim)
+        self.ta_encoder = BimodalFusionLayer(embed_dim=768, cross_heads=12, self_heads=12,kdim=self.a_dim, vdim=self.a_dim)
 
         # 3. last fusion
 
