@@ -11,7 +11,7 @@ from config import get_args, get_config, output_dim_dict, criterion_dict
 from data_loader import get_loader
 from utils.logs import set_arg_log
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "4" # choose the available GPU
+os.environ["CUDA_VISIBLE_DEVICES"] = "0" # choose the available GPU
 
 logging.getLogger ().setLevel (logging.INFO)
 logging.basicConfig(level=logging.INFO,
